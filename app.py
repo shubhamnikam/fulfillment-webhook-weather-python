@@ -104,7 +104,6 @@ def makeWebhookResult(data):
 
     print("Response:")
     print(speech + speechs)
-    print(speechs)
 
     return {
         "speech": speech + speechs,
