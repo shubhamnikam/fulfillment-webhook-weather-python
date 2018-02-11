@@ -104,11 +104,11 @@ def makeWebhookResult(data):
     s= "\n"
 
     print("Response:")
-    print(speech + \n + speechs)
+    print(speech + '\n' + speechs)
 
     return {
-        "speech": speech + \n + speechs,
-        "displayText": speech + \n + speechs,
+        "speech": speech + '\n' + speechs,
+        "displayText": speech + '\n' + speechs,
 
         # "data": data,
         # "contextOut": [],
