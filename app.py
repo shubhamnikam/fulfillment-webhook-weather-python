@@ -101,13 +101,14 @@ def makeWebhookResult(data):
     speech = "Today the weather in " + location.get('city') + ": " + condition.get('text') + \
              ", And the temperature is " + condition.get('temp') + " " + units.get('temperature') + '.'
     speechs= "Want to know another cities Weather? Just tell me Name of City..."
+    s= "\n"
 
     print("Response:")
-    print(speech + "\n" + speechs)
+    print(speech + s + speechs)
 
     return {
-        "speech": speech + "\n"  + speechs,
-        "displayText": speech + "\n" + speechs,
+        "speech": speech + s + speechs,
+        "displayText": speech + s + speechs,
 
         # "data": data,
         # "contextOut": [],
