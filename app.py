@@ -103,14 +103,13 @@ def makeWebhookResult(data):
     speechs= "Want to know another cities Weather? Just tell me Name of City..."
 
     print("Response:")
-    print(speech)
+    print(speech + speechs)
     print(speechs)
 
     return {
-        "speech": speech,
-        "displayText": speech,
-        "speech": speechs,
-        "displayText": speechs,
+        "speech": speech + speechs,
+        "displayText": speech + speechs,
+
         # "data": data,
         # "contextOut": [],
         "source": "apiai-weather-webhook-sample"
